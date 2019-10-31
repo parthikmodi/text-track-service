@@ -8,4 +8,4 @@ before_install:
 - docker run parthikmodi/texttrackservice_website /bin/sh 
 
 script:
-- bundle exec rake test
+- docker-compose exec --user "$(id -u):$(id -g)" website rails db:reset
