@@ -1,11 +1,22 @@
+#services:
+#  - docker
+
+#before_install:
+#- docker pull parthikmodi/texttrackservice_website
+#- docker run -d -p 127.0.0.1:80:4567 parthikmodi/texttrackservice_website /bin/sh 
+#- docker ps -a
+#- docker run parthikmodi/texttrackservice_website /bin/sh 
+
+#script:
+#- docker-compose exec --user "$(id -u):$(id -g)" website rails db:reset
+
+language: ruby
+
 services:
   - docker
 
 before_install:
-- docker pull parthikmodi/texttrackservice_website
-- docker run -d -p 127.0.0.1:80:4567 parthikmodi/texttrackservice_website /bin/sh 
+- docker pull silentflame/tts-docker
+- docker run -d -p 127.0.0.1:80:4567 silentflame/tts-docker /bin/sh -c "cd /text-track-service; bundle exec foreman start;"
 - docker ps -a
-- docker run parthikmodi/texttrackservice_website /bin/sh 
-
-script:
-- docker-compose exec --user "$(id -u):$(id -g)" website rails db:reset
+- docker run silentflame/tts-docker /bin/sh -c "cd /text-track-service"
