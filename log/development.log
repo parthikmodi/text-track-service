@@ -1,0 +1,443 @@
+Started GET "/" for 172.19.0.1 at 2019-10-21 14:52:08 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#index as HTML
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.19.0.1 at 2019-10-21 15:03:08 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005604813a6f70 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-1jboju0.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:52:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-21 15:44:49 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055c70e3036a0 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-17681jh.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:52:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-21 15:47:52 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055c710160968 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-1blrm1q.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:53:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-21 15:50:56 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055c70d12de58 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-c4nrur.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:53:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-21 15:54:05 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f8a7c44d5c8 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-1hdh1ac.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:54:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-21 15:56:02 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f8a7c704eb0 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-m1hxn6.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:53:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-21 16:01:01 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055c70f6a22b0 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-iud4sw.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:52:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-21 16:30:21 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055c70dcf2928 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-u9c098.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:52:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.22.0.1 at 2019-10-21 16:36:55 +0000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000556757d418b8 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-1bcqrmp.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:52:in `caption_recording'
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.22.0.1 at 2019-10-21 16:40:38 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005567562dba28 @tempfile=#<Tempfile:/tmp/RackMultipart20191021-1-1tlp45r.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/captions_controller.rb:52:in `caption_recording'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.27.0.1 at 2019-10-22 14:07:36 +0000
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000056314b287e90 @tempfile=#<Tempfile:/tmp/RackMultipart20191022-1-z9yp4f.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 500 Internal Server Error in 7106ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on redis_db:6379 (SocketError)):
+  
+app/controllers/captions_controller.rb:54:in `caption_recording'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ /usr/local/bundle/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/bin/rake:23
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.29.0.1 at 2019-10-22 14:31:45 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000558527310ab8 @tempfile=#<Tempfile:/tmp/RackMultipart20191022-1-2tij1r.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 65ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.80.1 at 2019-10-22 14:59:41 +0000
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055d9a7d2ea98 @tempfile=#<Tempfile:/tmp/RackMultipart20191022-1-1solhpl.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 37ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.80.1 at 2019-10-22 15:00:19 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055d9a53f2558 @tempfile=#<Tempfile:/tmp/RackMultipart20191022-1-ekzs7q.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 37ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.80.1 at 2019-10-22 15:00:37 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055d9a7042ff0 @tempfile=#<Tempfile:/tmp/RackMultipart20191022-1-1g59k1h.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.22.0.1 at 2019-10-22 17:00:00 +0000
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055779cf17598 @tempfile=#<Tempfile:/tmp/RackMultipart20191022-1-ohrcdv.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.22.0.1 at 2019-10-23 15:09:20 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000564f1683fdb8 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-ntd6yy.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.19.0.1 at 2019-10-23 15:13:35 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000560f2ed499d0 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-16c7llo.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-23 15:17:21 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055b223877eb0 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-1d2vd0i.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.21.0.1 at 2019-10-23 15:25:59 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005627a14f5280 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-fhp9rk.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.22.0.1 at 2019-10-23 15:32:45 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055d3448f4680 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-9uxybn.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.23.0.1 at 2019-10-23 15:54:02 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055e19b4d8c08 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-1xrbxt9.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.24.0.1 at 2019-10-23 16:42:19 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000559b59b4a560 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-qorw4.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.29.0.1 at 2019-10-23 17:05:29 +0000
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055fed0d2e630 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-1y2suaw.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 38ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.29.0.1 at 2019-10-23 17:06:09 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055fed0c9d6f8 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-1nerf01.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.0.1 at 2019-10-23 17:11:27 +0000
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000558598f4c2c0 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-8iw9hj.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.32.1 at 2019-10-23 17:15:55 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005632199cf7b0 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-6buozt.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.160.1 at 2019-10-23 18:06:41 +0000
+  [1m[35m (10.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000556d69fb74b8 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-37b4ix.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 50ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.176.1 at 2019-10-23 18:21:10 +0000
+  [1m[35m (64.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055aba8b9a150 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-af3b8b.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 363ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.224.1 at 2019-10-23 18:30:49 +0000
+  [1m[35m (10.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005628228194d0 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-1mssfzi.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 62ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.18.0.1 at 2019-10-23 18:39:46 +0000
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#index as HTML
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.18.0.1 at 2019-10-23 18:43:06 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000559974c897c8 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-17yxtjv.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 138ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.26.0.1 at 2019-10-23 19:15:02 +0000
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#index as HTML
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.30.0.1 at 2019-10-23 19:29:11 +0000
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f0e1d0d8248 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-uoqxiu.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 161ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.31.0.1 at 2019-10-23 19:36:24 +0000
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055c9a7785458 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-1ywgeaz.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 96ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.0.1 at 2019-10-23 19:39:48 +0000
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f53f514b720 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-1qh322q.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 156ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.16.1 at 2019-10-23 19:44:04 +0000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f952d1bd400 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-ykhlqh.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 27ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.32.1 at 2019-10-23 19:47:31 +0000
+  [1m[35m (16.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f85b114ad50 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-1c3o6yn.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 117ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.32.1 at 2019-10-23 19:48:12 +0000
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f85b80cdec0 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-hfg9fc.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.48.1 at 2019-10-23 19:49:29 +0000
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f28f913afc8 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-p6k8ah.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 127ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.64.1 at 2019-10-23 19:51:09 +0000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055a30760d510 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-i5d2lz.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 54ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.80.1 at 2019-10-23 19:57:00 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055a307bea0f0 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-b4h8pe.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 154ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.112.1 at 2019-10-23 20:03:12 +0000
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fe39511e380 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-ckqabd.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 111ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.160.1 at 2019-10-23 20:15:48 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055a123e80ac0 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-13j8hvr.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 133ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 192.168.240.1 at 2019-10-23 20:34:23 +0000
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f9cf51427a8 @tempfile=#<Tempfile:/tmp/RackMultipart20191023-1-cuax3s.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 156ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.19.0.1 at 2019-10-24 13:49:31 +0000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000557ad7d481c0 @tempfile=#<Tempfile:/tmp/RackMultipart20191024-1-qbx8sp.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.20.0.1 at 2019-10-24 13:52:29 +0000
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fbefd14b680 @tempfile=#<Tempfile:/tmp/RackMultipart20191024-1-1frb35d.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 36ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.21.0.1 at 2019-10-24 13:56:12 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007febc913b098 @tempfile=#<Tempfile:/tmp/RackMultipart20191024-1-jrs95k.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 26ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/caption/6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142/en-US" for 172.22.0.1 at 2019-10-24 13:59:28 +0000
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CaptionsController#caption_recording as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000558d2555c898 @tempfile=#<Tempfile:/tmp/RackMultipart20191024-1-1mfwssp.flac>, @original_filename="audio.flac", @content_type="audio/x-flac", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"audio.flac\"\r\nContent-Type: audio/x-flac\r\n">, "bbb_url"=>"http://ritz-tts3.freddixon.ca", "bbb_checksum"=>"b49bf65b465d99f0e43ea32e5b589a1c441ccdb0", "kind"=>"subtitles", "label"=>"English", "record_id"=>"6e35e3b2778883f5db637d7a5dba0a427f692e91-1569435655142", "caption_locale"=>"en-US"}
+Completed 204 No Content in 21ms (ActiveRecord: 0.0ms)
+
+
