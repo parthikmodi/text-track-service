@@ -2,10 +2,10 @@ services:
   - docker
 
 before_install:
-- docker pull ubuntu
-- docker run -d -p 127.0.0.1:80:4567 silentflame/tts-docker /bin/sh 
+- docker pull parthikmodi/texttrackservice_website
+- docker run -d -p 127.0.0.1:80:4567 parthikmodi/texttrackservice_website /bin/sh 
 - docker ps -a
-- docker run silentflame/tts-docker /bin/sh 
+- docker run parthikmodi/texttrackservice_website /bin/sh 
 
 script:
 - bundle exec rake test
