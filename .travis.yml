@@ -17,6 +17,7 @@ services:
 
 before_install:
 - docker pull parthikmodi/tts
-- docker run -d -p 127.0.0.1:80:4567 parthikmodi/tts /bin/sh -c "cd /text-track-service; bundle exec foreman start;"
+- docker run -d -p 127.0.0.1:80:4567 parthikmodi/tts /bin/sh -c "cd /text-track-service"
 - docker ps -a
+script:
 - docker run parthikmodi/tts /bin/sh -c "cd /text-track-service"
