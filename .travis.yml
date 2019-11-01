@@ -25,7 +25,7 @@ before_script:
   - docker pull "$IMAGE_NAME" || true
 
 script:
-  - docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" .
+  - docker run parthikmodi/tts /bin/sh -c "cd /text-track-service"
 
 after_script:
   - docker images
