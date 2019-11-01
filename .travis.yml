@@ -34,6 +34,9 @@ after_script:
 before_deploy:
   - docker login -u "parthikmodi" -p "$DOCKER_PASSWORD"
   - docker tag "$IMAGE_NAME" "${IMAGE_NAME}:latest"
+  - git add .
+  - git commit -m "commit from travis-ci"
+  - git push
 
 deploy:
   provider: script
