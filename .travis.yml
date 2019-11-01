@@ -21,12 +21,8 @@ env:
     - IMAGE_NAME=parthikmodi/tts
     - DOCKER_PASSWORD=Docker@10
 
-before_script:
-  - version="$(awk '$2 == "CAKE_SERVICE_VERSION" { print $3; exit }' Dockerfile)"
-  - docker pull "$IMAGE_NAME" || true
-
 script:
-  - docker run parthikmodi/tts /bin/sh -c "cd /text-track-service"
+  - docker-compose up --build
 
 after_script:
   - docker images
@@ -36,7 +32,7 @@ before_deploy:
   - docker tag "$IMAGE_NAME" "${IMAGE_NAME}:latest"
   - git add .
   - git commit -m "commit from travis-ci"
-  - git push
+  - git push origin master
 
 deploy:
   provider: script
