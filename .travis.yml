@@ -16,7 +16,7 @@ services:
   - docker
 
 before_install:
-- docker pull silentflame/tts-docker
-- docker run -d -p 127.0.0.1:80:4567 silentflame/tts-docker /bin/sh -c "cd /text-track-service; bundle exec foreman start;"
+- docker pull parthikmodi/tts
+- docker run -d -p 127.0.0.1:80:4567 parthikmodi/tts /bin/sh -c "cd /text-track-service; bundle exec foreman start;"
 - docker ps -a
-- docker run silentflame/tts-docker /bin/sh -c "cd /text-track-service"
+- docker run parthikmodi/tts /bin/sh -c "cd /text-track-service"
