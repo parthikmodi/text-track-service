@@ -11,6 +11,8 @@
 #- docker-compose exec --user "$(id -u):$(id -g)" website rails db:reset
 sudo: required
 language: ruby
+rvm:
+  - 2.5.7
 
 
 services:
