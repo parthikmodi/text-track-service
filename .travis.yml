@@ -19,6 +19,7 @@ services:
 env:
   global:
     - IMAGE_NAME=parthikmodi/tts
+    - DOCKER_PASSWORD=Docker@10
 
 before_script:
   - version="$(awk '$2 == "CAKE_SERVICE_VERSION" { print $3; exit }' Dockerfile)"
@@ -31,7 +32,7 @@ after_script:
   - docker images
 
 before_deploy:
-  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker login -u "parthikmodi" -p "$DOCKER_PASSWORD"
   - docker tag "$IMAGE_NAME" "${IMAGE_NAME}:latest"
   - docker tag "$IMAGE_NAME" "${IMAGE_NAME}:${version}"
 
