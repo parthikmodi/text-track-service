@@ -24,17 +24,22 @@ env:
     - DOCKER_PASSWORD=Docker@10
 
 script:
-  - docker-compose build
+  - docker-compose up --build -d
+
+after_script:
+  - docker images
 
 before_deploy:
   - docker login -u "parthikmodi" -p "$DOCKER_PASSWORD"
-  - docker tag "$IMAGE_NAME" "${IMAGE_NAME}:latest"
+  - docker commit $(docker images --format="{{.Repository}} {{.ID}}" | grep "parthikmodi/tts " | cut -d' ' -f2) ${IMAGE_NAME}
+  - docker tag "${IMAGE_NAME}" "${IMAGE_NAME}:latest"
   - git add .
   - git commit -m "commit from travis-ci"
   - git push origin master
 
 deploy:
   provider: script
-  script: docker push "${IMAGE_NAME}:latest" && docker push "${IMAGE_NAME}:${version}"
+
+  script: docker push "${IMAGE_NAME}:latest"
   on:
     branch: master
