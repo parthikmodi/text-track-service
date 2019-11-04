@@ -30,12 +30,14 @@ after_script:
   - docker images
 
 before_deploy:
-  - docker login -u "parthikmodi" -p "$DOCKER_PASSWORD"
-  - docker commit $(docker images --format="{{.Repository}} {{.ID}}" | grep "parthikmodi/tts " | cut -d' ' -f2) ${IMAGE_NAME}
-  - docker tag "${IMAGE_NAME}" "${IMAGE_NAME}:latest"
   - git add .
   - git commit -m "commit from travis-ci"
   - git push origin master
+  - docker login -u "parthikmodi" -p "$DOCKER_PASSWORD"
+  - id = docker images --format="{{.Repository}} {{.ID}}" | grep "parthikmodi/tts " | cut -d' ' -f2)
+  - docker commit ${id} tts
+  - docker tag tts ${IMAGE_NAME}
+  - docker push ${IMAGE_NAME}
 
 deploy:
   provider: script
