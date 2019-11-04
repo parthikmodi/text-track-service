@@ -24,10 +24,7 @@ env:
     - DOCKER_PASSWORD=Docker@10
 
 script:
-  - docker-compose up --build
-
-after_script:
-  - docker images
+  - docker-compose build
 
 before_deploy:
   - docker login -u "parthikmodi" -p "$DOCKER_PASSWORD"
