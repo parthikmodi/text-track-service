@@ -3,7 +3,6 @@ language: ruby
 rvm:
   - 2.5.7
 
-
 services:
   - docker
 
@@ -20,7 +19,7 @@ script:
 before_deploy:
   - git add .
   - git commit -m "commit from travis-ci"
-  - git push origin master
+  - git push https://parthikmodi:${GIT_PASSWORD}@github.com/parthikmodi/text-track-service.git --all
   - docker login -u "parthikmodi" -p "$DOCKER_PASSWORD"
   - id = docker images --format="{{.Repository}} {{.ID}}" | grep "parthikmodi/tts " | cut -d' ' -f2)
   - docker commit ${id} tts
