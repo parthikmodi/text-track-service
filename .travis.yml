@@ -25,8 +25,7 @@ env:
 
 script:
   - docker-compose up --build -d
-
-after_script:
+  - docker ps
   - docker images
 
 before_deploy:
@@ -40,8 +39,8 @@ before_deploy:
   - docker push ${IMAGE_NAME}
 
 deploy:
-  provider: script
+  #provider: script
 
-  script: docker push "${IMAGE_NAME}:latest"
+  #script: docker push "${IMAGE_NAME}:latest"
   on:
     branch: master
