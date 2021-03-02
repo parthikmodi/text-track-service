@@ -17,7 +17,7 @@ gem 'httparty'
 gem "pg"
 gem 'puma', '~> 3.11'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 6.1.3'
 
 gem 'redis', '4.1.2'
 gem 'redis-namespace'
